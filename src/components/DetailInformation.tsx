@@ -1,4 +1,4 @@
-import { useContextWeather } from "@/Context/weather-context";
+import { useContextWeather } from "@/context/weather-context";
 
 export const DetailInformation = () => {
   const IWeatherData = useContextWeather();

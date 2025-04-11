@@ -1,4 +1,4 @@
-import { useContextForcast } from "@/Context/forcast-context";
+import { useContextForcast } from "@/context/forcast-context";
 import {
   Carousel,
   CarouselContent,

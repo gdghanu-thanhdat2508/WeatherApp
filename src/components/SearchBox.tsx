@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { useQueryCity } from "@/hooks/chooseCity";
+import { useQueryCity } from "@/hooks/use-choose-city";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useCoordContext } from "@/Context/city-context";
+import { useCoordContext } from "@/context/city-context";
 
 export const SearchBox = () => {
   const [city, setCity] = useState("");

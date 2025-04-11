@@ -1,4 +1,4 @@
-import { useQueryForeCast } from "@/hooks/getForcast";
+import { useQueryForeCast } from "@/hooks/use-get-forcast";
 import { IForcastData } from "@/types/forcast.interface";
 import React from "react";
 import { useCoordContext } from "./city-context";

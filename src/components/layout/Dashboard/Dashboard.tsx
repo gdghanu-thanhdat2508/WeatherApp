@@ -2,11 +2,11 @@ import { Weather } from "../../Weather";
 import { Location } from "../../Location";
 import { DetailInformation } from "../../DetailInformation";
 import { TimeZone } from "../../TimeZone";
-import { WeatherDataProvider } from "@/Context/weather-context";
-import { ForcastDataProvider } from "@/Context/forcast-context";
+import { WeatherDataProvider } from "@/context/weather-context";
+import { ForcastDataProvider } from "@/context/forcast-context";
 import { Forcast } from "@/components/Forcast";
 import { SearchBox } from "@/components/SearchBox";
-import { WeatherCoordProvider } from "@/Context/city-context";
+import { WeatherCoordProvider } from "@/context/city-context";
 
 export const Dashboard = () => {
   // const coord = { lat: 21.0245, lon: 105.8412 };

@@ -1,4 +1,4 @@
-import { useQueryWeather } from "@/hooks/getCurrentWeather";
+import { useQueryWeather } from "@/hooks/use-get-current-weather";
 import { IWeatherData } from "@/types/weather.interface";
 import React from "react";
 import { useCoordContext } from "./city-context";
