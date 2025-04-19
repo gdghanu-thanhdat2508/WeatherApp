@@ -1,6 +1,6 @@
 import { cityAPI } from "@/api/getCity";
 import { ICity } from "@/types/city.interface";
-import { useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 
 const queryCity = (cityName: string, limit: number) => {
   return useQuery<ICity[], Error>({
@@ -10,6 +10,13 @@ const queryCity = (cityName: string, limit: number) => {
   });
 };
 
+const mutateCity = () => {
+  return useMutation<ICity[], Error, { cityName: string; limit: number }>({
+    mutationFn: ({ cityName, limit }) => cityAPI.getCity(cityName, limit),
+  });
+};
+
 export const useQueryCity = {
     queryCity,
+    mutateCity
 };
